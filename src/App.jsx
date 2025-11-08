@@ -1,0 +1,19 @@
+import React from 'react'
+import { Link, Route, Routes } from 'react-router-dom'
+import Home from './Pages/Home'
+import Agency from './Pages/Agency'
+import Projects from './Pages/Projects'
+
+const App = () => {
+  return (
+    <div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/agency' element={<Agency />} />
+        <Route path='/projects' element={<Projects />} />
+      </Routes>
+    </div>
+  )
+}
+
+export default App
